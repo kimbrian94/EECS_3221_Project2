@@ -1,12 +1,9 @@
 EECS 3221 Mini Project 2
-Name: Giseung Kim
-Student #: 212981858
-EECS login: giseung
+This project involves implementing several different process scheduling algorithms. The scheduler will be assigned a predefined set of tasks and will schedule the tasks based on the selected scheduling algorithm. Each task is assigned a priority and CPU burst. The following scheduling algorithms will be implemented:
 
-In this contained files, all starter sources are same except for driver.c
-I have made a few addition to the driver.c, which are global variable for each
-schedulers to reference from. These are global head node of the list and the total
-number of tasks(processes) in each schedule.
-So to compile correctly, you need to use my overridden version of the driver.c
-NOT the original starter code driver.c
-And there are each cpu schedulers also added in the zip folder
+First-come, first-served (FCFS), which schedules tasks in the order in which they request the CPU.
+Shortest-job-first (SJF), which schedules tasks in order of the length of the tasks’ next CPU burst.
+Priority scheduling, which schedules tasks based on priority.
+Round-robin (RR) scheduling, where each task is run for a time quantum (or for the remainder of its CPU burst).
+
+Priorities range from 1 to 10, where a higher numeric value indicates a higher relative priority. For round-robin scheduling, the length of a time quantum is 10 milliseconds.
